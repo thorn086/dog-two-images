@@ -5,6 +5,7 @@ function submitForm() {
     $('form').submit(event => {
         event.preventDefault();
         let numChoice = document.getElementById("photos").value;
+        $('.three').removeClass('hidden');
         loadImages(numChoice);
         resetForm();
     });
@@ -36,6 +37,6 @@ function resetForm(){
 
 $(function () {
     console.log('app loaded, ready for submition');
-    loadImages(3);
+    loadImages();
     submitForm();
 });

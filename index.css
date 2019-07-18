@@ -11,6 +11,11 @@ Body{
     background: rgb(214, 214, 131);
 }
 
+.hidden{
+    
+    display:none;
+}
+
 header{
     width:100%;
     padding: 10px;
